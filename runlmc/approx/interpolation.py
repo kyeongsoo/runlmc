@@ -211,7 +211,13 @@ def autogrid(Xs, lo, hi, m):
     hi += 2 * delta
     m += 4
 
-    grids = [np.linspace(*args) for args in zip(lo, hi, m)]
+    # Modified by K. S. (Joseph) Kim (kyeongsoo.kim@outlook.com)
+    # N.B.: np.linspace after numpy 1.11.0 no longer supports non-integer inputs.
+    #       check: https://www.programmersought.com/article/76827535995/
+    #
+    # grids = [np.linspace(*args) for args in zip(lo, hi, m)]
+    step = (hi - lo) / (m - 1.0)
+    grids = [np.arange(lo, hi+0.5*step, step)]
     return grids
 
 
