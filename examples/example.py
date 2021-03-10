@@ -20,6 +20,8 @@ import numpy as np
 
 # get_ipython().run_line_magic('matplotlib', 'inline')
 # import matplotlib.pyplot as pltv
+import matplotlib.pyplot as plt
+
 
 np.random.seed(1234)
 
