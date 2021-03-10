@@ -4,7 +4,7 @@
 # In[1]:
 
 
-#get_ipython().run_line_magic('env', 'OMP_NUM_THREADS=1')
+# get_ipython().run_line_magic('env', 'OMP_NUM_THREADS=1')
 
 import os, sys
 if os.path.basename(os.getcwd()) != 'runlmc':
@@ -18,7 +18,7 @@ from runlmc.models.optimization import AdaDelta
 
 import numpy as np
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib.pyplot as plt
 
 np.random.seed(1234)
