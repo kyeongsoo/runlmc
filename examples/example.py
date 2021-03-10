@@ -19,7 +19,7 @@ from runlmc.models.optimization import AdaDelta
 import numpy as np
 
 # get_ipython().run_line_magic('matplotlib', 'inline')
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as pltv
 
 np.random.seed(1234)
 
